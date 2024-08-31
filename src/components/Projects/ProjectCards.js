@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
+import { FaRegComment } from "react-icons/fa";
 
 function ProjectCards(props) {
   return (
@@ -13,7 +14,7 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
 
-        {/* If the component contains a Form link, it will render the below component */}
+        {/* If the component contains a Form link, it will render the form button */}
         {props.formLink && (
           <Button
             variant="primary"
@@ -22,6 +23,19 @@ function ProjectCards(props) {
           >
             <CgWebsite /> &nbsp;
             {"Form"}
+          </Button>
+        )}
+
+        {/* If the component contains a Feedback link, it will render the feedback button */}
+        {props.feedbackLink && (
+          <Button
+            variant="secondary"
+            href={props.feedbackLink}
+            target="_blank"
+            style={{ marginLeft: "10px" }} // Adjust margin to your preference
+          >
+            <FaRegComment /> &nbsp;
+            {"Feedback"}
           </Button>
         )}
       </Card.Body>

@@ -33,7 +33,7 @@ function Home2() {
               <br />
               <br />
               We do what we do because we believe in
-               <b className="purple"> learning extends beyond the classroom.</b> 
+               <b className="purple"> learning extends beyond the classroom..!</b> 
             </p>
           </Col>
           <Col md={4} className="myAvtar">

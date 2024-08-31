@@ -4,14 +4,13 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import dnc from "../../Assets/dnc.jpeg";
 
-
 function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-           Recent <strong className="purple">Events </strong>
+           Recent <strong className="purple">Events</strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are the events that we have conducted recently.
@@ -23,12 +22,11 @@ function Projects() {
               isBlog={false}
               title="DNC"
               description="Divide and Conquer is a technical event that consists of three rounds. The first round is Power of Perception, followed by Hidden Glyph, and the final round is Error Eraser."
-             //ghLink=""
-               formLink="https://docs.google.com/forms/d/e/1FAIpQLSf1Q-tx97pOqs5Yl3MX-jnZj3nqEv_F_zBbCCbut63MA0dsbQ/viewform"
+              formLink="https://docs.google.com/forms/d/e/1FAIpQLSf1Q-tx97pOqs5Yl3MX-jnZj3nqEv_F_zBbCCbut63MA0dsbQ/viewform"
+              feedbackLink="https://docs.google.com/forms/d/e/1FAIpQLSf1Q-tx97pOqs5Yl3MX-jnZj3nqEv_F_zBbCCbut63MA0dsbQ/viewform"
             />
           </Col>
-
-          
+          {/* Add more ProjectCard components as needed */}
         </Row>
       </Container>
     </Container>
