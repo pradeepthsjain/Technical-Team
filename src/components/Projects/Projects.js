@@ -23,7 +23,7 @@ function Projects() {
               title="DNC"
               description="Divide and Conquer is a technical event that consists of three rounds. The first round is Power of Perception, followed by Hidden Glyph, and the final round is Error Eraser."
               formLink="https://docs.google.com/forms/d/e/1FAIpQLSf1Q-tx97pOqs5Yl3MX-jnZj3nqEv_F_zBbCCbut63MA0dsbQ/viewform"
-              feedbackLink="https://docs.google.com/forms/d/e/1FAIpQLSf1Q-tx97pOqs5Yl3MX-jnZj3nqEv_F_zBbCCbut63MA0dsbQ/viewform"
+              //feedbackLink="https://docs.google.com/forms/d/e/1FAIpQLSf1Q-tx97pOqs5Yl3MX-jnZj3nqEv_F_zBbCCbut63MA0dsbQ/viewform"
             />
           </Col>
           {/* Add more ProjectCard components as needed */}
