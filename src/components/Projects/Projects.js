@@ -22,7 +22,7 @@ function Projects() {
     imgPath={dnc2}
     isBlog={false}
     title="DNC 2.0"
-    description="Divide and Conquer 2.O is back bigger and bolder.! Five Thrilling technical events run in parallel, but choose wisely you can compete in only one.! Team up in pairs and take on the challenge..!"
+    description="Divide and Conquer 2.0 is back bigger and bolder.! Five Thrilling technical events run in parallel, but choose wisely you can compete in only one.! Team up in pairs and take on the challenge..!"
     formLink="https://docs.google.com/forms/d/e/1FAIpQLScCa6hi5PfyXeUeGFHfMHF99P61tXuNmlMixXadSiQl82gNGA/viewform"
     brochureLink="/brochures/dnc brochure.pdf" // Path to your brochure file
   />
