@@ -1,0 +1,70 @@
+.tech-icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr)); /* Ensures uniform icon sizes */
+  gap: 10px; /* Balanced spacing */
+  justify-content: center;
+  padding: 15px;
+  max-width: 100%;
+}
+
+.tech-icons {
+  position: relative;
+  width: 75px; /* Smaller size for less scrolling */
+  height: 75px;
+  overflow: hidden;
+  border-radius: 6px; /* Slight rounding for a clean look */
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #f4f4f4;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.name-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  padding: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.tech-icons:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.tech-icons:hover .name-overlay {
+  opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tech-icons-container {
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Adjusted for smaller screens */
+      gap: 8px;
+  }
+  .tech-icons {
+      width: 65px;
+      height: 65px;
+  }
+  .name-overlay {
+      font-size: 0.7rem;
+      padding: 3px;
+  }
+}
